@@ -1,0 +1,56 @@
+<!-- 
+    ada 4 fungsi transform
+    scale
+    rotate
+    skew
+    translate
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(ellipse farthest-side at 50px 30px, salmon, skyblue);
+            margin: 50px auto;
+            transition: 1s;
+
+        }
+
+        /* 
+
+        scale(angka), scaleX(angka), scaleY(angka)
+        rotate(deg), rotateX(deg), rotateY(deg)
+        skew(deg ), skewX(deg), skewY(deg)
+
+         */
+
+        .kotak:hover {
+            transform: skew(180deg);
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="kotak"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ab omnis molestias eius necessitatibus aperiam aut
+        veniam ipsa mollitia. Corrupti officia dicta repudiandae cumque aspernatur tempore voluptatibus accusamus
+        aliquam nesciunt!</p>
+</body>
+
+</html>

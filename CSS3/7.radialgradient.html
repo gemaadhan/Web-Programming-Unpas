@@ -1,0 +1,31 @@
+<!-- syntax penggunaan nya sama persis seperti linear gradient -->
+<!-- warna pertama yang dituls adalah warna yang di tengah -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .kotak {
+            width: 600px;
+            height: 200px;
+            /* 
+            value pertama adalah tipe lingkarannya <ellipse | circle> 
+            value kedua adalah jangkauan titik pusat ke sisi terluarnya <closest-corner | closest-side | farthest-corner | farthest-side
+            value ketiga dan keempat adalh posisi x <left |center | right | px> dan posisi y <top | bottom | center px> (titik pusat) 
+             */
+            background-image: radial-gradient(ellipse farthest-side at left center, red, blue);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="kotak"></div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+3 topik penting pada css layouting itu ada, box model, float, dan positioning.
+namun sebelumnya kita perlu pemahmana tentang display dimensi dan overflow.

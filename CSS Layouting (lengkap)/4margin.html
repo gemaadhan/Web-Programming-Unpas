@@ -1,0 +1,79 @@
+<!-- 
+    
+    MARGIN
+
+    cara pakai
+
+
+
+    overlapping margin
+    -terjadi ketika menggabungkan 2 buah margin, kiri dan kanan atau atas dan bawah
+    -margin vertikal tidak saling menambahkan, yang di pakai adalah yang paling besar
+    -margin horisontal saling menambahkan
+    -kotak kalo di inline-block dia akan ada jarak dikin walaupun belum di margin, solusinya div nya kita
+    
+    negatif margin
+    dia akan bergerak berlawanan dengan nilai positifnya
+
+    auto
+    margin-left dan margin-right jadikan auto jika ingin ditengah kan
+
+    shorthand
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan margin</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+
+        .satu {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            /* untuk semua sisi */
+            /* margin: 50px;  */
+
+            /* value pertama untuk atas bawah, value kedua untuk kiri kanan */
+            /* margin: 50px 200px; */
+
+            /* value pertama untuk atas value kedua untuk kiri kanan, value ke3 bawah */
+            /* margin: 50px 200px 70px; */
+
+            /* atas kanan bawah kiri */
+            margin: 50px 70px 90px 8px;
+
+        }
+
+        .dua {
+            
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin-left: -80px;
+
+
+        }
+
+        .tiga {
+            width: 50px;
+            height: 50px;
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="satu">1</div>
+    <div class="dua">2</div>
+    <div class="tiga">3</div>
+</body>
+
+</html>

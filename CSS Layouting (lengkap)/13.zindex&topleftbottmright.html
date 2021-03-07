@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .satu {
+            background-color: rosybrown;
+            /* dengan z index kita bisa mengatur posisi layer
+            
+            */
+            z-index: 99;
+        }
+
+        .dua {
+            background-color: royalblue;
+            top: 100px;
+            left: 100px;
+            z-index: 89;
+        }
+
+        .tiga {
+            background-color: seagreen;
+            top: 200px;
+            left: 200px;
+        }
+
+        .kotak {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+        }
+
+        .empat {
+            position: absolute;
+            background-color: black;
+            top: 100px;
+            left: 100px;
+            bottom: 100px;
+            right: 100px;
+            z-index: 100;
+            opacity: 0.7;
+        }
+
+        .lingkaran {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border-radius: 50%;
+            top: -25px;
+            right: -25px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kotak satu"></div>
+    <div class="kotak dua"></div>
+    <div class="kotak tiga"></div>
+    <div class="empat">
+        <div class="lingkaran"></div>
+    </div>
+</body>
+
+</html>

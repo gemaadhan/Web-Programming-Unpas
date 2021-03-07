@@ -1,0 +1,21 @@
+body {
+    background-color: skyblue;
+    color: #ffffff;
+    /* secara default image akan diulang terhadapt sumbu x dan sumbu y padahal sebenarnya gambar nya hanya400 x 400 pixel saja */
+    background-image: url(gambar/moroccan-flower-dark.png);
+    /* jika ingin mengulang hanya di salah satu sumbu saja */
+    /* atau jika tidak mau mengulang gambar bisa menggunakan no repead */
+    background-repeat: no-repeat;
+    /* dengan menggunakan no repeat, akan mengaktifkan propertu background-position; */
+    /* ada dua value background-positin: 0 0 , value pertama untuk horisontal yang kedua vertical*/
+    background-position: top left;
+    /* biar gambar nya masuk ketengah */
+    background-size:cover;
+}
+
+
+/* background punya short hand */
+
+body {
+    background: greenyellow url(gambar/moroccan-flower-dark.png) top right no-repeat;
+}

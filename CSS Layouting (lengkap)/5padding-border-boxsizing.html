@@ -1,0 +1,58 @@
+<!--
+     padding 
+        1. tidak bisa bernilai auto
+        2. tidak bisa bernilai negatif
+        3. padding mempengaruhi box yang kita buat (dimensi elemen total = dimensi awal + padding + border tanpa margin)
+        4. cara mengakalinya dengan menyesuaikan dimensi kotak nya
+    
+    border
+    1. cara pakainya, langsung masukkan 3 value
+    width, style(solid, dotted, dashed, double), color
+
+
+    box-sizing 
+    membuat lebar kotaknya sesuyai degnan dimensi awal, cara pakainya di elementnnya langsung bukan di bungkusnya ya...
+
+    note : biasakan untuk mengatur hanya width dari sebuah element, agar height nya menyesuaikan dengan kontennya
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Padding dan Border</title>
+    <style>
+
+        div {
+            background-color: coral;
+            width: 200px;
+            
+            margin: 20px auto;
+            display: block;
+        }
+
+        .satu {
+            margin-bottom: 0px;
+            padding-bottom: 40px;
+            background-color: skyblue;
+            border: 1px;
+           box-sizing: border-box;
+            padding: 50px;
+        }
+        .dua {
+            padding-top: 50px;
+            margin-top: 0px;
+            padding: 90px;
+            border: 5px double black;
+            border-left: 5px dashed blue;
+            box-sizing: border-box;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="satu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsum. Odit quisquam dolore expedita consequatur voluptatum perferendis dolorum cum rem nam magnam, quasi, animi corporis ea voluptates sequi dignissimos neque Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quisquam, consectetur voluptate asperiores, quia dolores, eaque minus ad doloribus repudiandae rem excepturi hic iure qui ipsum itaque rerum ratione dicta.</div>
+    <div class="dua">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ipsum. Odit quisquam dolore expedita consequatur voluptatum perferendis dolorum cum rem nam magnam, quasi, animi corporis ea voluptates sequi dignissimos neque!</div>
+</body>
+</html>

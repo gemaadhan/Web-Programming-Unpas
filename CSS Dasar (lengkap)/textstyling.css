@@ -1,0 +1,33 @@
+/* text styling property */
+
+h1 {
+    /* 1. color 
+    value nya bisa menggunakan nama, hexa atau rgb(0,0,255) */
+    /* color:rgb(0, 55, 76); */
+    /* color: salmon; */
+    color: #acf435;
+    font-size: 150px;
+}
+
+p {
+    /* 2. text-align */
+    /* left right center justify */
+    text-align: justify;
+    /* 3. text indent, satuan nya bisa px bisa % */
+    text-indent: 100px;
+    /* 4. text-decoration */
+    /* none, underline, overline, dan line-through */
+    text-decoration: line-through;
+    /* 6. letter-spacing & word spacing*/
+    /* value nya bisa normal atau px */
+    letter-spacing: 20px;
+    word-spacing: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: salmon;
+    /* 5. text-transform */
+    /* none, lowercase, uppercase, capitalize */
+    text-transform: capitalize;
+}

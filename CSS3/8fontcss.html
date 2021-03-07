@@ -1,0 +1,62 @@
+<!-- cara lama penggunaan font -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Penggunaan font dari google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <style>
+        /* <!-- Penggunaan font dari google --> */
+        .caragoogle {
+
+            font-family: 'DotGothic16', sans-serif;
+        }
+
+        @font-face {
+            font-family: "sacramento";
+            src: url(Sacramento-Regular.ttf);
+        }
+
+        .carafontface {
+            font-family: sacramento;
+        }
+
+        .webfontgenerator {
+            font-family:sacramentoregular ;
+        }
+
+        /* kita bisa ubah format ttf menjadi woff */
+        /* menggunakan web font generator */
+        @font-face {
+            font-family: 'sacramentoregular';
+            src: 
+                url('sacramento-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+    </style>
+</head>
+
+<body>
+    <p class="caragoogle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, alias nisi nostrum sint
+        suscipit, libero
+        tenetur ipsum veritatis laboriosam dicta distinctio modi nesciunt rem corrupti accusamus quibusdam minima at
+        eius.</p>
+
+    <p class="carafontface">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum non culpa amet. Vel
+        repudiandae iusto vero sed voluptas quod commodi impedit, fuga natus, blanditiis, dolore nulla in! Quos, laborum
+        quaerat.</p>
+
+        <p class="webfontgenerator">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut labore illo, est in accusantium culpa error, corrupti ex distinctio quasi modi voluptatum esse enim necessitatibus qui unde, eum eos nesciunt!</p>
+
+</body>
+
+</html>

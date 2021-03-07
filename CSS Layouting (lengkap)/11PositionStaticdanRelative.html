@@ -1,0 +1,58 @@
+<!-- POSITION
+property poisition punya 4 value (static, relative, absolute, fixed)
+static ini default (gausah dibahas)
+relative (dengan posisi relatif kita menggeser sebuah elemen satu dimensi ke depan. namun posisi default nya dia tetap dipertahankan di tempat semula, dengan menambahakan properti position, kita bisa mendapatkan akses ke propert left right bottom top), kayaknya right n left dan top n bottom cuma bisa dipakai salah satu aja kalo berbarengan yang dipakai baris terakhir. pergerakan relative, bergerak relatif terhadap posisi awalny
+
+RELATIVE JARANG DIGUNAKAN, UNTUK MENGGERAKAN ELEMENT NON STATIC BIASANYA PAKE POSITION ABSOLUTE
+-->
+
+<style>
+    
+
+
+.kotak {
+    width: 90px;
+    height: 90px;
+}
+
+.satu {
+    background-color: aqua;
+}
+
+.dua {
+    background-color: salmon;
+    position: relative;
+    right: 30px;
+    left: 10px;
+    
+    top: 10px;
+    
+}
+
+.tiga  {
+    background-color: seagreen;
+}
+
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ 
+        <div class="kotak satu"></div>
+        <div class="kotak dua"></div>
+        <div class="kotak tiga"></div>
+
+</body>
+
+</html>

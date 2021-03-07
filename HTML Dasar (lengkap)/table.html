@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- struktur tabel yang simple -->
+    <h3>INI CONTOH TABLE SIMPLE</h1>
+        <table border="1">
+            <tr>
+                <!--ini table row   -->
+                <td>baris 1 kolom 1</td><!-- ini table data / kolom -->
+                <td>baris 1 kolom 2</td>
+                <td>baris 1 kolom 3</td>
+            </tr>
+            <tr>
+                <td>baris 2 kolom 1</td>
+                <td>baris 2 kolom 2</td>
+                <td>baris 3 kolom 3</td>
+            </tr>
+        </table>
+        <br><br><br>
+        <!-- struktur yang lebih kompleks table nya dibagi 2 dulu, pake thead dan tbody-->
+        <!-- dibawah ini contoh table dengan 2 sumbu / kalau mau bikin biasa ya di tbody di dalam tr nya pake td aja -->
+        <h3>INI CONTOH TABLE KOMPLEKS DENGAN DUA SUMBU</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Kolom 1</th>
+                    <th>Kolom 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>baris 1 kolom 1</th>
+                    <td>baris 1 kolom 2</td>
+                    <td>baris 1 kolom 3</td>
+                </tr>
+                <tr>
+                    <th>baris 2 kolom 1</th>
+                    <td>baris 2 kolom 2</td>
+                    <td>baris 3 kolom 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+        <br><br><br>
+        <h3>INI CONTOH PENGGUNAAN BORDER CELLSPACING DAN CELLPADDING</h3>
+        <table border="1" cellspacing="0" cellpadding="9">
+
+            <!-- atrribue pada table -->
+            <!-- border untuk menambah garis disekitar cell-->
+            <!-- cellspacing untuk menambah jarak antar cell -->
+            <!-- cellpadding untuk memberi luas pada sebuah cell-->
+
+            <!-- tiga yang atas biasanya mengunakan CSS -->
+
+            <!-- kenapa hasilnya jadi border nya 2 ? itu karena cellspacing, makanya di bikin 0 -->
+            <!-- untuk memberikan ruang pada tulisannya baru gunakan cellpadding -->
+            <thead>
+                <tr>
+                    <th>header baris 1 kolom 1</th>
+                    <th>header baris 1 kolom 2</th>
+                    <th>header baris 1 kolom 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>isi baris 2 kolom 1</td>
+                    <td>isi baris 2 kolom 2</td>
+                    <td>isi baris 2 kolom 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br>
+
+        <h3>INI CONTOH PENGGUNAAN ROWSPAN DAN COLSPAN</h3>
+
+        <!-- menggunakan colspan tentukan mau merge kolom berapa dan berapa kemudian tambahkan colspan pada kolom awalnya, trus hapus kolom yang digabung tadi -->
+        <!-- kalau pakai rowspan tentukan mau merge baris mana sama mana, tambahkan rowspan pada baris awalnya, trus hapus row pada baris yang digabung tadi -->
+        <!-- valuenya gunakan sesuai berapa kolom tau baris yang akan digabun -->
+
+        <h4>AWALNYA TABLE NYA KAYAK GINI</h4>
+        <table border="1" cellspacing="0" cellpadding="20">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <h4>KEMUDIAN KITA TERAPKAN ROWSPAN DAN COLSPAN ATAU MERGING</h4>
+        <table border="1" cellspacing="0" cellpadding="20">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4,7</td>
+                <td colspan="2">5,6</td>
+            </tr>
+            <tr>
+
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <h3>INI LATIHAN PENGGUNAAN ROWSPAN DAN COLSPAN</h3>
+        <h4>TABEL INI AKAN KITA BUAT MERGE DITENGAH 6,7,10,11</h4>
+        <table border="2" cellspacing="0" cellpadding="50">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+        </table>
+
+        <br><br><br>
+        <h4>GINI JADINYA</h4>
+        <table border="2" cellspacing="0" cellpadding="50">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td colspan="2" rowspan="2">6,7,10,11</td>
+
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+
+
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+        </table>
+</body>
+
+</html>

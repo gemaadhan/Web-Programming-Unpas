@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+    background-color: #eaeaea;
+    /* font: 16px/28px arial, sans-serif; */
+    color: #333;
+    background-image: url(images/sativa.png);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	
+}
+
+.container {
+    background-color:#ffffff;
+    width: 960px;
+    margin: auto;
+}
+
+.header {
+    position: relative;
+    margin-top: 50px;
+}
+
+.header .judul{
+    font-size: 40px;
+    font-weight: bold;
+    
+    padding:20px 0 10px 20px;
+
+    
+}
+
+.header ul li {
+    /* display: inline-block; */
+    float: right;
+    box-sizing: border-box;
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    /* border-right: solid 1px salmon; */
+}
+
+.header a {
+    text-decoration: none;
+    
+    color: salmon;
+    margin: auto;
+    
+    
+    color: inherit;
+
+    overflow: hidden;
+   
+    
+}
+
+
+
+.header ul li:hover {
+    background-color: lightskyblue;
+    color: white;
+    background-color: salmon;  
+}
+
+
+
+.kotak {
+    height: 5px;
+    background-color: salmon;
+    width: 800px;
+    margin: auto;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+}
+.hero {
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid salmon;
+    height: 350px;
+    background-image: url(images/JamHpRusak.jpg);
+	background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    /* display: none; */
+}
+
+h2.judulartikel {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main {
+    width: 600px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 15px;
+    float: left;
+}
+
+.main p.penulis {
+    font-size: 15px;
+}
+
+.main p {
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: black;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p.copy  {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+.sidebar{
+    float: right;
+    width: 300px;
+    padding: 20px;
+    padding-left: 0;
+  
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar img {
+    padding-top: 15px;
+    float: left;
+    margin-right: 17px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.sidebar p {
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: justify;
+    /* text-align: ; */
+}
+
+a.ribbon img {
+    
+    width: 250px;
+    height: 250px;
+}
+
+a.ribbon {
+    position:absolute;
+    top: -90px;
+    right: -38px;
+
+}
+
+a.ribbon h1 {
+    display: block;
+    position: absolute;
+    top: 128px;
+    left:80px;
+    color: white;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: salmon;
+    z-index: 99;
+}
+

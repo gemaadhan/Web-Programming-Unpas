@@ -1,0 +1,60 @@
+<!-- dimensi maksudnya itu width dan height -->
+<!-- 
+    satuan yang nilainya absolute px
+    satuan yang nilainya relative terhadap element parentnya
+    satuan yang diambil dari satuan di dunia nyata in, cm, mm, pt, pc
+ -->
+ <!-- 
+     jika kita bikin ukuran elemen child yang lebih besar dari parent nya, maka dia akan keluar dari parentnya, kondisi ini namanya overflow
+  -->
+  <!-- 
+      property overflow
+      visible : ini nilai default, kalo terjadi overflow tetap di munculkan
+      auto : css akan otomatis menambah scroll kalo udah ga cukup
+      hidden : content kelebihannya akan disembunyikan
+      scroll : mirip dengan auto, bedanya kalo contentnya cukup, scroll nya masih tetep muncul 
+   -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .satu {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            
+        }
+
+        .dua {
+            width: 120%;
+            background-color: powderblue;
+        }
+
+        .kotaktulis {
+            background-color: purple;
+            color: white;
+            width: 300px;
+            height: 100px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="satu">
+        <div class="dua">Hello World</div>
+    </div>
+
+    <div class="kotaktulis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia voluptatibus nihil aliquam quasi ipsum optio iure fuga, provident e</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+/* merupakan kelas semu untuk element HTML, yang membuat kita bisa mendifinisikan style pada keadaan tertentu dari elemen tersebut */
+
+
+/* ada beberapa tipe pseudoclass  */
+
+
+/* 1. pseudo class yang berhubungan dengan link */
+
+
+/* :link :hover :active :visited */
+
+.hello:link {
+    color: blue;
+}
+
+.hello:hover {
+    color: currentColor;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.hello:active {
+    font-style: italic;
+    color: darkmagenta;
+}
+
+.hello:visited {
+    color: red;
+}
+
+
+/* 2. :first-child :last-child :nth-child() */
+
+li:first-child a {
+    /* carikan saya a yang ada di dalam li si anak pertama */
+    color: saddlebrown;
+}
+
+li:last-child a {
+    /* carikan saya a yang ada di dalam li si anak terakhir */
+    font-weight: bold;
+}
+
+li:nth-child(8) a {
+    /* carikan saya a yang ada di dalam li si anak ke 8 */
+    font-style: italic;
+}
+
+li:nth-child(3n) a {
+    /* carikan saya a yang ada di dalam li kelipatan 2*/
+    text-transform: uppercase;
+}
+
+
+/* 3n+1 juga bisa */
+
+li:nth-child(3n-2) a {
+    /* membuat kelipatan 3 tapi start nya dari nomer 1, caranya cari kondisi normalnya(3n) kemudian dikurangi berapa sampai posisinya ada di 1 */
+    text-transform: lowercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+
+li:nth-child(3n-2) a:hover {
+    /* carikan a di dalam li sianak seling 3 yang dimulai dari 1 pas kena hover */
+    letter-spacing: 40px;
+}
+
+
+/* bisa even bisa odd */
+
+li:nth-child(even) a:hover {
+    color: white;
+}
+
+
+/* untuk dikasus kita tag p bukan anak dari tag lain jadi tidak bisa menggunakan first child last child nth child, gunakan fisrt -of-type (element x yang pertama ditemukan) :last-of-type(elemen x yang terakhir kali ketemu */
+
+p:last-of-type {
+    color: red;
+}

@@ -1,0 +1,1 @@
+// ketika selesai membuat program, usahakan gunakan sedikit variabel.

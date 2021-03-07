@@ -1,0 +1,84 @@
+<!-- setiap deklarasi css memiliki berat yang berbeda. berat tersebut menentukan seberapa spesifik element dapat dipilih oleh selectro  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        p {
+            color: green;
+        }
+
+        /* maka selector terakhir akan mengoveride selector pertama */
+
+        #h1 {
+            color: salmon;
+        }
+
+        /* yang akan dipilih itu yang atas, karena id lebih spesifik dari pada tag */
+
+        h1 {
+            color: skyblue;
+        }
+
+        ul#sarapan li {
+            color: green;
+        }
+
+        /*  maka ini yang menang, karena lebih spesifik */
+        /* 0102 */
+
+        .favorit {
+            color: red;
+        }
+
+        /* 0010 */
+
+        /* bikin lebih spesifik */
+        ul#sarapan li.favorit {
+            color: red;
+        }
+        /* 0112 */
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum commodi fugit nostrum iusto quaerat dicta
+        exercitationem voluptatem velit voluptates veniam mollitia molestias voluptate totam placeat cumque adipisci,
+        eos dolorum magnam.</p>
+
+    <h1 id="h1">CEK ID</h1>
+
+    <ul id="sarapan">
+        <li class="favorit">Nasi Goreng</li>
+        <li>Mie Goreng</li>
+        <li>Bubur Ayam</li>
+        <li>Nasi Kuning</li>
+    </ul>
+</body>
+
+</html>
+<!-- cara menghitung specificity -->
+<!-- 0           0       0       0 -->
+<!-- inline      id      class   element -->
+
+<!-- misal -->
+<!-- #h1 -->
+<!-- 0           1       0       0 -->
+
+<!-- h -->
+<!-- 0           0       0       1 -->
+
+
+<!-- CONTOH LAIN -->
+<!--  -->

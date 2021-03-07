@@ -1,0 +1,46 @@
+/* <!-- CSS memisahkan antara font dan text -->
+<!-- perbedaannya, kalo font terkait dengan tulisannya sedangkan text terkait dengan property pendukung -->
+<!-- contoh property untuk font -->
+<!-- font-family = untuk mengatur jenis font
+    font-size = untuk mengatur ukuran font
+font-weight = untuk mengatur ketebalan font
+font-variant = untuk mengubah font menjadi small caps
+font style = untuk mengubah font menjadi bercetak miring
+line-height = untuk mengatur spasi antar baris -->
+
+<!-- font family punya 2 value yaiut nama font dan generic family -->
+<!-- generic family contohnya "serif", "sans-serif", "cursive", "fantasy", "monospace"--> */
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    /* maksudnya, browser akan mencari di OS ada font arial ngga ? kalo ngga ada dia akan cari Helvetica ? kalo ga ada juga dia akan mencari font dengan kategori sans-serif(jenis font yang tidak punya ekor0 */
+    font-size: 100px;
+    /* satuan nya ada px, % dan em */
+    font-weight: normal;
+    /* h1 defaul nya udah bold, value yang lain ada light,normal, 100-900, bold, bolder*/
+    font-variant: small-caps;
+    /* untuk membuat semua huruf jadi capital dengan huruf awal nya lebih besar, value lainnya adalah normal */
+    font-style: italic;
+    /* mengubah font menjadi miring, value lainnya adalah oblique dan normal. oblique juga membuat fort menjadi miring. oblique digunakan ketika font tidak memiliki jenis font miring, jadi di paksa miring  */
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 35px;
+    /* untuk mengatur jarak antar baris. valuenya adalah px % dan em */
+}
+
+/* shorthand property font */
+/* p.paragraph {
+    font-style: italic;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* semua styling di atas bisa dicapai dengan satu property yaitu font, valu yang wajib adalah font size dan fontfamily*/
+p.paragraph {
+    font : oblique small-caps lighter 12px/12px Arial, Helvetica, sans-serif ;
+}

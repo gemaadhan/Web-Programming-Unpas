@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <!-- tag pada form
+    
+            input, punya attribue type yang value nya text, password, radio, checkbox, || submit, reset dan button
+            textarea
+            select
+            button
+            label 
+        -->
+        <!-- for dan id digunakan untuk menyambungkan label dan input -->
+        <table >
+            <tr>
+                <td align="right"><label for="username">username : </label></td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="password">password :</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right"><label for="pria">for pria</label><input type="radio" id="pria"
+                        name="groupjk"><label for="wanita">for wanita</label><input type="radio" id="wanita"
+                        name="groupjk"></td>
+            </tr>
+            <td colspan="2" align="right">
+                <label for="menyanyi">menyanyi</label><input type="checkbox" id="menyanyi">
+                <label for="olahraga">olahraga</label><input type="checkbox" id="olahraga">
+                <label for="ngoding">ngoding</label><input type="checkbox" id="ngoding">
+            </td>
+
+
+            <tr>
+                <td align="right"><label for="komentar">komentar : </label></td>
+                <td><textarea name="" id="komentar" cols="30" rows="">Default isian</textarea></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="kota"></label>combo box :</td>
+                <td><select name="" id="kota">
+                        <option value="">Bandung</option>
+                        <option value="">Jakarta</option>
+                        <option value="">Semarang</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2">
+                    <!-- value untuk attribute type ada lagi yang lain yaitu submit(untuk mengirimkan data) reset(untuk mengkosongkan data) dan button(kalau mau kasih fungsi spesifik terhadap sebuah button) -->
+                    <input type="submit" name="" id="" value="submit pake input">
+
+                    <input type="reset" name="" id="" value="reset pake input">
+
+
+                
+
+                </td>
+                
+            </tr>
+            <tr>
+                <td align="right"  colspan="2">
+                <!-- penggunaan submit pada input tidak disarankan karena lebih baik menggunalan elemen button(ini beda sama button yg sbg type input lo ya) -->
+
+                <button type="submit">submit pakai button</button>
+
+                <button type="reset">reset pakai button</button>
+            </td>
+            </tr>
+
+        </table>
+
+
+
+
+
+
+        <!-- cek tag yang lain di w3schools.com/tags/tag_form -->
+
+    </form>
+
+
+
+
+</body>
+
+</html>

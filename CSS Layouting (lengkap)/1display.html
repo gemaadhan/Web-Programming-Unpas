@@ -1,0 +1,90 @@
+<!-- semua property di html punya property display  -->
+<!-- div diplay nya block -->
+<!-- span display nya inline -->
+<!-- value dari dispay ada 4 -->
+<!-- inline, inline-block, block, -->
+<!-- inline
+    1. element html yang secara default menambahkan baris baru ketika dibuat
+    2. lebar dan tinggi elemennya sebesar konten yang ada di dalanya
+    3. kita tidak bisa mengatur tinggi dan lebar elemen inline, kecuali img
+    4. margin dan padding haya mempengaruhi lement secara horizontal, tidak vertikal -->
+
+<!-- inline-block 
+    1. tidak ada elemen yang secara default display nya inlin-block-
+    2. kita harus ubah manual menjadi inline block
+    3. perilaku dasarnya sama dengan elemen inline
+    4. perbedaannya kita bisa atur tinggi lebar nya -->
+
+<!-- block 
+    1. elemen yang secara default menambahkan baris baru ketika dibuat 
+    2. jika tidak diatur lebarnya maka lebar defaul dari element block akan memenuhi lebar dari browser
+    3. kita dapat mengatur tinggi dan lebar dari elemen block
+    4. di dalam elemen block kita dapat menyimpan tag dengan elemen inline, inline-blok, atau bahkan elemen blok lagi        
+-->
+<!-- none
+    1. untuk menghhilangkan sebuah elemen -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak1 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .kotak1dalam {
+            background-color: blue;
+        
+            height: 50px;
+        }
+
+        .kotak2 {
+            display: inline-block;
+            background-color: red;
+            width: 100px;
+            height: 50px;
+        }
+
+        p {
+            display: none;
+        }
+
+        li {
+            display: inline-block;
+            width: 19.5%;
+            background-color: green;
+        }
+
+        .sidebar {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kotak1">
+        <div class="kotak1dalam"></div>
+    </div>
+    <div class="kotak2"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste doloribus perspiciatis facere ea officiis? Nisi
+        quod enim nemo, provident quos corrupti a necessitatibus repellendus amet excepturi quisquam reprehenderit
+        voluptatum totam.</p>
+
+    <ul>
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 1</a></li>
+        <li><a href="">link 1</a></li>
+    </ul>
+</body>
+
+</html>

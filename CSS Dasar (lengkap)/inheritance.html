@@ -1,0 +1,32 @@
+<!-- element akan mewarisi nilai properti yang sama dengan element parent nya.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: arial;
+            color: darkgray;
+        }
+        a {
+            color: inherit;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- semua element dibawah akan mewarisi property color dari body -->
+    <!-- yang a tidak berubah menjadi darkgrey, karena secara defautl element a tidak mewarisi property color -->
+    <!-- agar si a mau mewarisi property color. kita harus tambahkan property color value nya inherit -->
+    <!-- artinya dia akan mewarisi property yang diwarisi tag parent nya -->
+    <!-- inherit adalah solusi incase kita menemukan element yang tidak mewarisi value dari parent nya -->
+    <h1>HALO BRO</h1>
+    <a href="">HALO BRO</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, impedit dignissimos! Iusto, magnam. Nesciunt mollitia et voluptates voluptas, molestiae, iste, possimus itaque nobis distinctio quisquam impedit atque fugiat? Tempore, rem?</p>
+    
+</body>
+</html>

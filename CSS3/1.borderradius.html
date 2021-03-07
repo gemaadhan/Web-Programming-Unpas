@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3</title>
+    <style>
+        .kotak {
+            width: 400px;
+            height: 400px;
+            background-color: salmon;
+            text-align: center;
+            line-height: 400px;
+            /* kalau mau jadi lingkaran, rumusnya adalah setengah dari lebar dan tingginya, atau kita kasih 50% biar berapapun dimensinya tetap jadi lingkaran  */
+            /* border-radius: 200px; */
+            /* border-radius: 50%; */
+            
+
+            /* kalau mau beberapa sisi nya aja bisa menggunakan border top right */
+            /* border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%; */
+
+            /* atau bisa menggunakan shorthand searah jarum jam dari atas kiri */
+            border-radius: 50% 50% 0 50% ;
+            
+            /* penggunaan background image akan menyesuaikan bentuk parent nya */
+            background-image: url(ok.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .kotakunik {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px 100px 100px 20px;
+            border: 1px solid green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="kotak">Hellow World</div>
+    <div class="kotakunik"></div>
+</body>
+
+</html>

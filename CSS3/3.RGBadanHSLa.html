@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(moroccan-flower-dark.png);
+
+        }
+
+        .satu {
+            width: 300px;
+            height: 300px;
+          
+            
+            position: relative;
+            /* kalau opacity kita meberi opacity pada element sedangkan kalau menggunakan rgba kita memberi opacity pada warna  */
+            /* value keempat adalah opacity */
+            background-color: rgba(255,102,0,0.5);
+            
+        }
+
+
+
+        .dua {
+            width: 300px;
+            height: 300px;
+            /* atau kita juga bisa mengganti warna dengan HSLa *//* value keempat adalah opacity */
+            background-color: hsla(197,71%,73%,0.5);
+            position: absolute;
+            right: -150px;
+            bottom: -150px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="satu">
+        <div class="dua"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!-- linear gradient, gardient garis lurus -->
+<!-- liner-gradient bukan property pada css3 -->
+<!-- liner-gradient adalah value untuk background image -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* dua color */
+        .satu {
+            width: 600px;
+            height: 300px;
+            background-image: linear-gradient(red, blue);
+        }
+
+        /* multiple color */
+        .dua {
+            width: 600px;
+            height: 300px;
+            background-image: linear-gradient(red, blue, green, yellow);
+        }
+
+        /* mengatur arah menggunakan sudut */
+        .tiga {
+            width: 600px;
+            height: 300px;
+            background-image: linear-gradient(-45deg, red, blue, green, yellow);
+        }
+
+
+        /* mengatur arah menggunakan arah */
+        /* 
+to left
+to right
+to top
+to bottom
+
+to left top
+to left bottom
+to left top
+to right bottom
+ */
+        .empat {
+            width: 600px;
+            height: 300px;
+            background-image: linear-gradient(to right bottom, salmon, skyblue, greenyellow, yellow);
+        }
+
+        /* color stop */
+        .lima {
+            width: 600px;
+            height: 300px;
+            background-image: linear-gradient(to right bottom, salmon 30%, skyblue 90%, greenyellow 90%, yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <div class="empat"></div>
+    <div class="lima"></div>
+</body>
+
+</html>
