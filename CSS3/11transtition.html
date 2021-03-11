@@ -1,0 +1,106 @@
+<!-- ada dua hal untuk membuat perubahan nilai dari elemen menjadi halus yang pertama transtion dan yang kedua animation, apa bedantya ? 
+
+    transisi cuma ada keadaan awal dan akhir
+    transition: [property] <durasi> [fungsi] [delay];
+
+    animation kita bisa punya banyak keadaan dengan keyframe
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transtion</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .kotak {
+            background-color: salmon;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            /* durasi */
+            /* transition: 1s; */
+
+            /* property, untuk memilih property apa yang mau kena transition */
+            /* transition: margin-left 1s; */
+
+            /* solusi transisi patah patah adalah dengan membuat pembungkus dari elemen yang ingin kita transisi kan, hover kita letakkan di pembungkusnya */
+
+        }
+
+        /* fungsi / timing function*/
+
+        .kotak1 {
+            transition: 3s ease;
+        }
+
+        .kotak2 {
+            transition: 3s ease-in;
+        }
+
+        .kotak3 {
+            transition: 3s ease-in-out;
+        }
+
+        .kotak4 {
+            transition: 3s ease-out;
+        }
+
+        .kotak5 {
+            transition: 3s ease;
+        }
+
+        .kotak6 {
+            transition: 3s linear;
+        }
+
+           
+        .kotak7{
+            /* inspect pilih style klik centang nya */
+            transition: 3s cubic-bezier(0.32,-0.76, 0.45, 1.46);
+        }
+
+        .kotak8{
+            /* delay (waktu tunggu sebelum dilakukan transisi) */
+            transition: background-color 3s 2s, transform 3s 1s, margin-left 3s 4s;
+        }
+
+
+        .container {
+            width: 900px;
+            border: 1px solid black;
+            margin: 90px auto;
+        }
+
+        .container:hover .kotak {
+            background-color: seagreen;
+            transform: rotate(360deg);
+            margin-left: 800px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="kotak kotak1"></div>
+        <div class="kotak kotak2"></div>
+        <div class="kotak kotak3"></div>
+        <div class="kotak kotak4"></div>
+        <div class="kotak kotak5"></div>
+        <div class="kotak kotak6"></div>
+        <div class="kotak kotak7"></div>
+        <div class="kotak kotak8"></div>
+    </div>
+</body>
+
+</html>
