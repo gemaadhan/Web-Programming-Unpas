@@ -75,35 +75,17 @@ if (isset($_POST["submit"])) {
     } -->
 
     <form action="" method="post" enctype="multipart/form-data">
-        <ul>
-            <li>
+        
+            
                 <label for="pabrikan">Pabrikan : </label>
                 <input type="text" id="pabrikan" name="pabrikan">
-            </li>
-            <li>
-                <label for="tahun">Tahun : </label>
-                <input type="text" id="tahun" name="tahun">
-            </li>
-            <li>
-                <label for="jenis">Jenis : </label>
-                <input type="text" id="jenis" name="jenis">
-            </li>
-            <li>
-                <label for="warna">Warna : </label>
-                <input type="text" id="warna" name="warna">
-            </li>
-            <li>
-                <label for="bahan_bakar">Bahan Bakar : </label>
-                <input type="text" id="bahan_bakar" name="bahan_bakar">
-            </li>
-            <li>
-                <label for="gambar">Gambar : </label>
-                <input type="file" id="gambar" name="gambar">
-            </li>
-            <li>
+            
+            
+                
+        
                 <button type="submit" name="submit">Tuku Gem</button>
-            </li>
-        </ul>
+            
+        
     </form>
 </body>
 

@@ -1,0 +1,1 @@
+<!-- proses pemanggulan class(file) tanpa keywork require -->
